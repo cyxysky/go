@@ -1,0 +1,389 @@
+{
+  "key": "custom_obj_28415131380917476655525369616290742",
+  "name": "提交申请",
+  "type": "ROOT",
+  "child": {
+    "key": "custom_obj_28415131380917475406079400232691829",
+    "name": "配置审核",
+    "type": "approval",
+    "child": {
+      "key": "custom_obj_28415131380917476479864387745741284",
+      "name": "条件分支",
+      "type": "condition",
+      "branches": [
+        {
+          "key": "custom_obj_28415131380917475189176527494853590",
+          "name": "条件分支",
+          "type": "condition",
+          "child": {}
+        },
+        {
+          "key": "custom_obj_28415131380917475763709319656106640",
+          "name": "条件分支",
+          "type": "condition",
+          "child": {
+            "key": "custom_obj_28415131380917477715189393747556740",
+            "name": "条件分支",
+            "type": "condition",
+            "branches": [
+              {
+                "key": "custom_obj_28415131380917477818865571825762559",
+                "name": "条件分支",
+                "type": "condition",
+                "child": {}
+              },
+              {
+                "key": "custom_obj_28415131380917476528524744090361346",
+                "name": "条件分支",
+                "type": "condition",
+                "child": {
+                  "key": "custom_obj_28415131380917478339664782492628752",
+                  "name": "配置审核",
+                  "type": "approval",
+                  "child": {
+                    "key": "custom_obj_28415131380917476675699564699496001",
+                    "name": "条件分支",
+                    "type": "condition",
+                    "branches": [
+                      {
+                        "key": "custom_obj_28415131380917474901451186883001895",
+                        "name": "条件分支",
+                        "type": "condition",
+                        "child": {}
+                      },
+                      {
+                        "key": "custom_obj_28415131380917475379021979274649522",
+                        "name": "条件分支",
+                        "type": "condition",
+                        "child": {}
+                      }
+                    ],
+                    "child": {}
+                  }
+                }
+              }
+            ],
+            "child": {
+              "key": "custom_obj_28415131380917478028773499763298845",
+              "name": "条件分支",
+              "type": "condition",
+              "branches": [
+                {
+                  "key": "custom_obj_28415131380917476523982071054647108",
+                  "name": "条件分支",
+                  "type": "condition",
+                  "child": {}
+                },
+                {
+                  "key": "custom_obj_28415131380917479159731215577849755",
+                  "name": "条件分支",
+                  "type": "condition",
+                  "child": {}
+                }
+              ],
+              "child": {}
+            }
+          }
+        }
+      ],
+      "child": {
+        "key": "custom_obj_28415131380917478538835156986338398",
+        "name": "末端节点",
+        "type": "END"
+      }
+    }
+  }
+}
+
+
+{
+  "id": 3,
+  "object": "custom_obj_2841513138091747",
+  "name": "测试3",
+  "key": "custom_form_10162416350399872",
+  "cards": [
+    {
+      "name": "基本信息",
+      "attributes": [
+        {
+          "attributeId": 90,
+          "attribute": {
+            "id": 90,
+            "object": "Approval",
+            "name": "申请人",
+            "key": "createUser",
+            "type": "NUMBER",
+            "element": "select",
+            "parentObject": "Staff",
+            "joinColumn": "id",
+            "joinColumnZh": "name",
+            "transfer": false
+          },
+          "element": "select",
+          "name": "申请人",
+          "width": "third-inline",
+          "required": false,
+          "disable": false,
+          "show": true,
+          "placeholder": "请选择",
+          "location": {
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "attributeId": 91,
+          "attribute": {
+            "id": 91,
+            "object": "Approval",
+            "name": "发起部门",
+            "key": "launchDepartmentId",
+            "type": "NUMBER",
+            "element": "select",
+            "parentObject": "HrDepartment",
+            "joinColumn": "id",
+            "joinColumnZh": "name",
+            "transfer": false
+          },
+          "element": "select",
+          "name": "发起部门",
+          "width": "third-inline",
+          "required": false,
+          "disable": false,
+          "show": true,
+          "placeholder": "请选择",
+          "location": {
+            "x": 2,
+            "y": 1
+          }
+        },
+        {
+          "attributeId": 88,
+          "attribute": {
+            "id": 88,
+            "object": "Approval",
+            "name": "抄送人",
+            "key": "ccTo",
+            "type": "JSONB",
+            "element": "staffRange",
+            "transfer": false
+          },
+          "element": "staffRange",
+          "name": "抄送人",
+          "width": "third-inline",
+          "required": false,
+          "disable": false,
+          "show": true,
+          "placeholder": "请选择",
+          "location": {
+            "x": 3,
+            "y": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "组标题",
+      "attributes": [
+        {
+          "attributeId": 171,
+          "attribute": {
+            "id": 171,
+            "object": "custom_obj_2841513138091747",
+            "name": "数字",
+            "key": "custom_attr_16221938503996684",
+            "type": "NUMERIC",
+            "element": "number",
+            "transfer": false
+          },
+          "element": "number",
+          "name": "数字",
+          "width": "inline",
+          "required": false,
+          "disable": false,
+          "show": true,
+          "placeholder": "请输入",
+          "location": {
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "attributeId": 172,
+          "attribute": {
+            "id": 172,
+            "object": "custom_obj_2841513138091747",
+            "name": "多选",
+            "key": "custom_attr_10629485331548500",
+            "type": "JSONB",
+            "element": "checkbox",
+            "transfer": false
+          },
+          "element": "checkbox",
+          "name": "多选",
+          "width": "inline",
+          "required": false,
+          "disable": false,
+          "show": true,
+          "placeholder": "请选择",
+          "location": {
+            "x": 1,
+            "y": 2
+          }
+        },
+        {
+          "attributeId": 173,
+          "attribute": {
+            "id": 173,
+            "object": "custom_obj_2841513138091747",
+            "name": "多行文本",
+            "key": "custom_attr_2389610201750074",
+            "type": "STRING",
+            "element": "text",
+            "transfer": false
+          },
+          "element": "text",
+          "name": "多行文本",
+          "width": "inline",
+          "required": false,
+          "disable": false,
+          "show": true,
+          "placeholder": "请输入",
+          "location": {
+            "x": 1,
+            "y": 3
+          }
+        }
+      ]
+    }
+  ],
+  "buttons": [
+    {
+      "name": "取消",
+      "type": "secondary",
+      "click": {
+        "operate": "cancel"
+      }
+    },
+    {
+      "name": "保存草稿",
+      "type": "secondary",
+      "click": {
+        "operate": "draft"
+      },
+      "showCondition": {
+        "uuid": "4691367070685749102",
+        "object": "custom_obj_2841513138091747",
+        "groups": [
+          {
+            "conditions": [
+              {
+                "condition": "custom_obj_2841513138091747-Approval_id-Approval-status",
+                "keyword": "In",
+                "value": [
+                  0
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "驳回",
+      "type": "secondary",
+      "click": {
+        "operate": "reject"
+      },
+      "showCondition": {
+        "uuid": "9038040093425169695",
+        "object": "custom_obj_2841513138091747",
+        "groups": [
+          {
+            "conditions": [
+              {
+                "condition": "custom_obj_2841513138091747-Approval_id-Approval-status",
+                "keyword": "In",
+                "value": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "撤回",
+      "type": "secondary",
+      "click": {
+        "operate": "recall"
+      },
+      "showCondition": {
+        "uuid": "6296889084109564221",
+        "object": "custom_obj_2841513138091747",
+        "groups": [
+          {
+            "conditions": [
+              {
+                "condition": "custom_obj_2841513138091747-Approval_id-Approval-status",
+                "keyword": "In",
+                "value": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "通过",
+      "type": "primary",
+      "click": {
+        "operate": "pass"
+      },
+      "showCondition": {
+        "uuid": "5922726464000987558",
+        "object": "custom_obj_2841513138091747",
+        "groups": [
+          {
+            "conditions": [
+              {
+                "condition": "custom_obj_2841513138091747-Approval_id-Approval-status",
+                "keyword": "In",
+                "value": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "发起申请",
+      "type": "primary",
+      "click": {
+        "operate": "start"
+      },
+      "showCondition": {
+        "uuid": "8745678131951324743",
+        "object": "custom_obj_2841513138091747",
+        "groups": [
+          {
+            "conditions": [
+              {
+                "condition": "custom_obj_2841513138091747-Approval_id-Approval-status",
+                "keyword": "In",
+                "value": [
+                  0
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

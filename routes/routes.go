@@ -57,5 +57,8 @@ func SetupRoutes(cfg *config.Config) *gin.Engine {
 		}
 	}
 
+	// 设置工作流相关路由
+	SetupWorkflowRoutes(r, cfg)
+
 	return r
 } 
